@@ -20,6 +20,8 @@
 .texto{
   color: var(--texto);
   font-family: var(--textoForma);
+  font-size: larger;
+  font-weight: bolder;
 }
 .nombres{
   font-family: var(--nombresFormas);
@@ -30,6 +32,8 @@
   display: inline-block;
   position: relative;
   right: 2%;
+  border-style: double;
+  width: 50%;
   
  }
 .inicioCV_imagen{
@@ -56,4 +60,15 @@
 }
 .inicioCV:hover .inicioCV_titulo{
   opacity: 0;
+}
+
+.biografiaCV {
+  display: inline-block;
+  position: absolute;
+  border-style: dotted;
+  width: 40%;
+  margin: 0%;
+  padding: 0%;
+  left: 56%;
+  bottom: 68%;
 }
