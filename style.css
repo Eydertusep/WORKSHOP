@@ -1,0 +1,59 @@
+:root {
+  --colorFondo: #FFFBF2;
+  --texto: #2D2D2D;
+  --titulosColor: #8A1538;
+  --nombresColor: #2A9D8F;
+  --tituloForma: "Playfair Display", serif; ;
+  --textoForma: "Cormorant Garamond", serif; 
+  --nombresFormas: "Mulish", sans-serif;
+}
+
+* {
+  background-color: var(--colorFondo);
+  }
+
+
+.titulos{
+  color: var(--titulosColor);
+  font-family: var(--nombresFormas);
+}
+.texto{
+  color: var(--texto);
+  font-family: var(--textoForma);
+}
+.nombres{
+  font-family: var(--nombresFormas);
+  color: var(--nombresColor);
+}
+
+.inicioCV{
+  display: inline-block;
+  position: relative;
+  right: 2%;
+  
+ }
+.inicioCV_imagen{
+  opacity: 0;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  bottom: -1%;
+  margin: 0%;
+ }
+.inicioCV_nombre {
+  transition: linear;
+  
+ }
+ .inicioCV_titulo{
+  font-size: 35px;
+}
+
+.inicioCV:hover .inicioCV_nombre{
+  opacity: 0;
+ }
+.inicioCV:hover .inicioCV_imagen{
+  opacity: 1;
+}
+.inicioCV:hover .inicioCV_titulo{
+  opacity: 0;
+}
